@@ -3,128 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demo — Modern Business Website</title>
+  <title>Demo Bussines Page | Home</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">Business<span>Co</span></div>
+<header class="navbar">
+  <a class="logo" href="index.html">Demo Bussines<span>Page</span></a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
+  <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact" class="btn">Get Started</a>
-    </nav>
-  </header>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Transform Your Business <span>With Innovation</span></h1>
-      <p>
-        We help companies grow and succeed through cutting-edge solutions,
-        expert consulting, and dedicated support.
-      </p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Get Started</a>
-        <a href="#services" class="btn-outline">Learn More</a>
+    <div class="dropdown">
+      <button class="dropbtn" type="button">
+        Company <span class="chev">▾</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
 
-    <div class="hero-image">
-      <img src="images/hero.jpg" alt="Business meeting" />
-    </div>
-  </section>
+    <a href="contact.html" class="btn">Get Started</a>
+  </nav>
+</header>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <h2>About</h2>
-    <p class="section-subtitle">
-      We build strong online presences that convert visitors into clients.
+<section class="hero">
+  <div class="hero-text">
+    <h1>Transform Your Business <span>With a Modern Website</span></h1>
+    <p>
+      I build fast, responsive websites that look professional and help you get more customers.
+      Perfect for small businesses, restaurants, and personal brands.
     </p>
 
-    <div class="stats">
-      <div class="stat">
-        <h3>120+</h3>
-        <p>Clients Served</p>
-      </div>
-      <div class="stat">
-        <h3>8+</h3>
-        <p>Years Experience</p>
-      </div>
-      <div class="stat">
-        <h3>98%</h3>
-        <p>Success Rate</p>
-      </div>
+    <div class="hero-buttons">
+      <a href="contact.html" class="btn">Request a Quote</a>
+      <a href="services.html" class="btn-outline">See Services</a>
     </div>
-  </section>
 
-  <!-- Services -->
-  <section class="section" id="services">
-    <h2>Services</h2>
-    <p class="section-subtitle">What we can do for your business.</p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Strategy & Consulting</h3>
-        <p>Clear plan, clear results. We align goals and execution.</p>
-      </div>
-      <div class="card">
-        <h3>Digital Transformation</h3>
-        <p>Modern website & tools that help you sell more.</p>
-      </div>
-      <div class="card">
-        <h3>Dedicated Support</h3>
-        <p>We don’t disappear after launch — we help you improve.</p>
-      </div>
+    <div class="hero-badges">
+      <span class="badge">Responsive</span>
+      <span class="badge">Fast</span>
+      <span class="badge">Clean UI</span>
     </div>
-  </section>
+  </div>
 
-  <!-- Testimonials -->
-  <section class="section" id="testimonials">
-    <h2>Testimonials</h2>
-    <p class="section-subtitle">Real feedback from real clients.</p>
+  <div class="hero-image">
+    <img src="images/hero.jpg" alt="Business meeting" />
+  </div>
+</section>
 
-    <div class="cards">
-      <div class="card">
-        <p>“Fast, professional, and the website looks premium.”</p>
-        <strong>— Sarah M.</strong>
-      </div>
-      <div class="card">
-        <p>“We got more inquiries in the first week than the whole month before.”</p>
-        <strong>— David K.</strong>
-      </div>
-      <div class="card">
-        <p>“Clean design, mobile-friendly, and delivered on time.”</p>
-        <strong>— Amina R.</strong>
-      </div>
+<section class="section" id="why">
+  <h2>Why Choose Us</h2>
+  <p class="section-subtitle">A clear process, clean design, and real results.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Modern Design</h3>
+      <p>Professional look that builds trust and matches your brand.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>Mobile First</h3>
+      <p>Your website will look great on phones, tablets, and desktop.</p>
+    </div>
+    <div class="card">
+      <h3>Fast Delivery</h3>
+      <p>Quick turnaround with clean, readable code.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p class="section-subtitle">Let’s talk about your project.</p>
+<section class="section" id="stats">
+  <h2>Results</h2>
+  <p class="section-subtitle">Simple, measurable improvements.</p>
 
-    <form class="contact-form" id="contactForm">
-      <input type="text" id="name" placeholder="Your name" required />
-      <input type="email" id="email" placeholder="Your email" required />
-      <textarea id="message" placeholder="Your message" required></textarea>
-      <button class="btn" type="submit">Send Message</button>
-      <p class="form-note" id="formNote"></p>
-    </form>
-  </section>
+  <div class="stats">
+    <div class="stat">
+      <h3>3–7 Days</h3>
+      <p>Typical delivery</p>
+    </div>
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Mobile friendly</p>
+    </div>
+    <div class="stat">
+      <h3>Clean</h3>
+      <p>Modern UI/UX</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2026 BusinessCo. Built by Dino.</p>
-  </footer>
+<section class="cta">
+  <div class="cta-box">
+    <h2>Ready to launch your website?</h2>
+    <p>Send a message and I’ll reply with a clear plan and price.</p>
+    <a href="contact.html" class="btn">Contact Now</a>
+  </div>
+</section>
 
-  <script src="js/script.js"></script>
+<footer class="footer">
+  <p>© 2026 Dino Studio. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
