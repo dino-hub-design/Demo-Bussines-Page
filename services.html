@@ -5,80 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Demo Business Page | Services</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js" defer></script>
 </head>
 
 <body>
- <header class="navbar">
-    <a class="logo" href="./index.html">
-  <span class="logo-demo">Demo</span>
-  <span class="logo-business">Business</span>
-  <span class="logo-page">Page</span>
-</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="./index.html">
+        <span class="logo-demo">Demo</span>
+        <span class="logo-business">Business</span>
+        <span class="logo-page">Page</span>
+      </a>
 
-    <nav class="nav-links" id="navLinks">
-      <a class="nav-item" href="./index.html">Home</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
 
-      <div class="dropdown">
-        <button class="dropbtn nav-item" type="button" aria-haspopup="true" aria-expanded="false">
-          Company <span class="chev">▼</span>
-        </button>
-        <div class="dropdown-content" role="menu">
-          <a href="./about.html">About</a>
-          <a href="./services.html">Services</a>
-          <a href="./contact.html">Contact</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="./index.html">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" type="button">
+            Company <span class="chev">▼</span>
+          </button>
+          <div class="dropdown-content">
+            <a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact</a>
+          </div>
         </div>
-      </div>
 
-      <a class="btn" href="./contact.html">Get Started</a>
-    </nav>
+        <a class="btn" href="./contact.html">Get Started</a>
+      </nav>
+    </div>
   </header>
 
   <main class="section">
-    <section class="container page">
-      <h1 class="page-title">Services</h1>
-      <p class="muted">Choose a package that fits your business.</p>
+    <div class="container">
+      <div class="page-head">
+        <h1 class="page-title">Services</h1>
+        <p class="subtitle">Choose the option that fits your business.</p>
+      </div>
 
       <div class="grid-3">
         <div class="card">
           <h3>Landing Page</h3>
-          <p>One-page website for quick launches and promotions.</p>
-          <p class="muted small">Best for: small businesses</p>
+          <p class="muted">One-page website for promotions and quick launches.</p>
         </div>
         <div class="card">
           <h3>Business Website</h3>
-          <p>Multi-page website with About, Services, Contact.</p>
-          <p class="muted small">Best for: growing brands</p>
+          <p class="muted">Multi-page site (About, Services, Contact) with clean design.</p>
         </div>
         <div class="card">
-          <h3>Ongoing Support</h3>
-          <p>Updates, fixes, and improvements after launch.</p>
-          <p class="muted small">Best for: long-term</p>
+          <h3>Support</h3>
+          <p class="muted">Fixes, updates, and improvements after launch.</p>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Demo Business Page. All rights reserved.</p>
+    <div class="container">
+      <p>© 2026 Demo Business Page. All rights reserved.</p>
+    </div>
   </footer>
-
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const navLinks = document.getElementById("navLinks");
-    menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
-
-    const dropBtn = document.querySelector(".dropbtn");
-    const dropdown = document.querySelector(".dropdown");
-    dropBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      dropdown.classList.toggle("open");
-      dropBtn.setAttribute("aria-expanded", dropdown.classList.contains("open"));
-    });
-    document.addEventListener("click", () => {
-      dropdown.classList.remove("open");
-      dropBtn.setAttribute("aria-expanded", "false");
-    });
-  </script>
 </body>
 </html>

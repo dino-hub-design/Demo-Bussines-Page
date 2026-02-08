@@ -5,127 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Demo Business Page | Home</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js" defer></script>
 </head>
 
 <body>
   <header class="navbar">
-    <a class="logo" href="./index.html">Demo <span>Business Page</span></a>
+    <div class="container nav-inner">
+      <a class="logo" href="./index.html">
+        <span class="logo-demo">Demo</span>
+        <span class="logo-business">Business</span>
+        <span class="logo-page">Page</span>
+      </a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
 
-    <nav class="nav-links" id="navLinks">
-      <a class="nav-item" href="./index.html">Home</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="./index.html">Home</a>
 
-      <div class="dropdown">
-        <button class="dropbtn nav-item" type="button" aria-haspopup="true" aria-expanded="false">
-          Company <span class="chev">▼</span>
-        </button>
-        <div class="dropdown-content" role="menu">
-          <a href="./about.html">About</a>
-          <a href="./services.html">Services</a>
-          <a href="./contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn" type="button">
+            Company <span class="chev">▼</span>
+          </button>
+          <div class="dropdown-content">
+            <a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact</a>
+          </div>
         </div>
-      </div>
 
-      <a class="btn" href="./contact.html">Get Started</a>
-    </nav>
+        <a class="btn" href="./contact.html">Get Started</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="section">
-    <section class="hero container">
-      <div class="hero-text">
-        <h1>Transform Your Business With a <span class="accent">Modern Website</span></h1>
-        <p>
-          I build fast, responsive websites that look professional and help you get more customers.
-          Perfect for small businesses, restaurants, and personal brands.
-        </p>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Transform Your Business With a Modern Website</h1>
+          <p>
+            I build fast, responsive websites that look professional and help you get more customers.
+            Perfect for small businesses, restaurants, and personal brands.
+          </p>
 
-        <div class="hero-actions">
-          <a class="btn" href="./contact.html">Request a Quote</a>
-          <a class="btn btn-outline" href="./services.html">See Services</a>
+          <div class="hero-actions">
+            <a class="btn" href="./contact.html">Request a Quote</a>
+            <a class="btn btn-outline" href="./services.html">See Services</a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Responsive</span>
+            <span class="chip">Fast</span>
+            <span class="chip">Clean UI</span>
+          </div>
         </div>
 
-        <div class="chips">
-          <span class="chip">Responsive</span>
-          <span class="chip">Fast</span>
-          <span class="chip">Clean UI</span>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=60"
-             alt="Team meeting" />
-      </div>
-    </section>
-
-    <section class="container">
-      <h2>Why Choose Us</h2>
-      <p class="muted">A clear process, clean design, and real results.</p>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>Modern Design</h3>
-          <p>Professional look that builds trust and matches your brand.</p>
-        </div>
-        <div class="card">
-          <h3>Mobile First</h3>
-          <p>Your website will look great on phones, tablets, and desktop.</p>
-        </div>
-        <div class="card">
-          <h3>Fast Delivery</h3>
-          <p>Quick turnaround with clean, readable code.</p>
+        <div class="hero-card">
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=60"
+            alt="Team working"
+          />
         </div>
       </div>
     </section>
 
-    <section class="container">
-      <h2>Results</h2>
-      <p class="muted">Simple, measurable improvements.</p>
+    <section class="section">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <p class="subtitle">A clear process, clean design, and real results.</p>
 
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-big">3–7 Days</div>
-          <div class="stat-small">Typical delivery</div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Modern Design</h3>
+            <p class="muted">Professional look that builds trust and matches your brand.</p>
+          </div>
+          <div class="card">
+            <h3>Mobile First</h3>
+            <p class="muted">Your website will look great on phones, tablets, and desktop.</p>
+          </div>
+          <div class="card">
+            <h3>Fast Delivery</h3>
+            <p class="muted">Quick turnaround with clean, readable code.</p>
+          </div>
         </div>
-        <div class="stat">
-          <div class="stat-big">100%</div>
-          <div class="stat-small">Mobile friendly</div>
-        </div>
-        <div class="stat">
-          <div class="stat-big">Clean</div>
-          <div class="stat-small">Modern UI/UX</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Results</h2>
+        <p class="subtitle">Simple, measurable improvements.</p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-big">3–7 Days</div>
+            <div class="stat-small">Typical delivery</div>
+          </div>
+          <div class="stat">
+            <div class="stat-big">100%</div>
+            <div class="stat-small">Mobile friendly</div>
+          </div>
+          <div class="stat">
+            <div class="stat-big">Clean</div>
+            <div class="stat-small">Modern UI/UX</div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Demo Business Page. All rights reserved.</p>
+    <div class="container">
+      <p>© 2026 Demo Business Page. All rights reserved.</p>
+    </div>
   </footer>
-
-  <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById("menuBtn");
-    const navLinks = document.getElementById("navLinks");
-
-    menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
-
-    // Dropdown toggle (works on mobile)
-    const dropBtn = document.querySelector(".dropbtn");
-    const dropdown = document.querySelector(".dropdown");
-
-    dropBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      dropdown.classList.toggle("open");
-      dropBtn.setAttribute("aria-expanded", dropdown.classList.contains("open"));
-    });
-
-    document.addEventListener("click", () => {
-      dropdown.classList.remove("open");
-      dropBtn.setAttribute("aria-expanded", "false");
-    });
-  </script>
 </body>
 </html>
