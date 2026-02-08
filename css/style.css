@@ -316,8 +316,8 @@ body{
 .contact-box{
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 18px;
+  border-radius: 14px;
+  padding: 10px;
 }
 
 .mini-card{
