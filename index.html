@@ -3,111 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demo Bussines Page | Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Demo Business Page | Home</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
+  <header class="navbar">
+    <a class="logo" href="./index.html">Demo <span>Business</span></a>
 
-<header class="navbar">
-  <a class="logo" href="index.html">Demo Bussines Page</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
 
-  <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-item" href="./index.html">Home</a>
 
-  <nav class="nav-links" id="navLinks">
-    <a href="index.html">Home</a>
-
-    <div class="dropdown">
-      <button class="dropbtn" type="button">
-        Company <span class="chev">▾</span>
-      </button>
-      <div class="dropdown-content">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn nav-item" type="button" aria-haspopup="true" aria-expanded="false">
+          Company <span class="chev">▼</span>
+        </button>
+        <div class="dropdown-content" role="menu">
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
+        </div>
       </div>
-    </div>
 
-    <a href="contact.html" class="btn">Get Started</a>
-  </nav>
-</header>
+      <a class="btn" href="./contact.html">Get Started</a>
+    </nav>
+  </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Transform Your Business <span>With a Modern Website</span></h1>
-    <p>
-      I build fast, responsive websites that look professional and help you get more customers.
-      Perfect for small businesses, restaurants, and personal brands.
-    </p>
+  <main class="section">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Transform Your Business With a <span class="accent">Modern Website</span></h1>
+        <p>
+          I build fast, responsive websites that look professional and help you get more customers.
+          Perfect for small businesses, restaurants, and personal brands.
+        </p>
 
-    <div class="hero-buttons">
-      <a href="contact.html" class="btn">Request a Quote</a>
-      <a href="services.html" class="btn-outline">See Services</a>
-    </div>
+        <div class="hero-actions">
+          <a class="btn" href="./contact.html">Request a Quote</a>
+          <a class="btn btn-outline" href="./services.html">See Services</a>
+        </div>
 
-    <div class="hero-badges">
-      <span class="badge">Responsive</span>
-      <span class="badge">Fast</span>
-      <span class="badge">Clean UI</span>
-    </div>
-  </div>
+        <div class="chips">
+          <span class="chip">Responsive</span>
+          <span class="chip">Fast</span>
+          <span class="chip">Clean UI</span>
+        </div>
+      </div>
 
-  <div class="hero-image">
-    <img src="images/hero.jpg" alt="Business meeting" />
-  </div>
-</section>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=60"
+             alt="Team meeting" />
+      </div>
+    </section>
 
-<section class="section" id="why">
-  <h2>Why Choose Us</h2>
-  <p class="section-subtitle">A clear process, clean design, and real results.</p>
+    <section class="container">
+      <h2>Why Choose Us</h2>
+      <p class="muted">A clear process, clean design, and real results.</p>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Modern Design</h3>
-      <p>Professional look that builds trust and matches your brand.</p>
-    </div>
-    <div class="card">
-      <h3>Mobile First</h3>
-      <p>Your website will look great on phones, tablets, and desktop.</p>
-    </div>
-    <div class="card">
-      <h3>Fast Delivery</h3>
-      <p>Quick turnaround with clean, readable code.</p>
-    </div>
-  </div>
-</section>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Modern Design</h3>
+          <p>Professional look that builds trust and matches your brand.</p>
+        </div>
+        <div class="card">
+          <h3>Mobile First</h3>
+          <p>Your website will look great on phones, tablets, and desktop.</p>
+        </div>
+        <div class="card">
+          <h3>Fast Delivery</h3>
+          <p>Quick turnaround with clean, readable code.</p>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="stats">
-  <h2>Results</h2>
-  <p class="section-subtitle">Simple, measurable improvements.</p>
+    <section class="container">
+      <h2>Results</h2>
+      <p class="muted">Simple, measurable improvements.</p>
 
-  <div class="stats">
-    <div class="stat">
-      <h3>3–7 Days</h3>
-      <p>Typical delivery</p>
-    </div>
-    <div class="stat">
-      <h3>100%</h3>
-      <p>Mobile friendly</p>
-    </div>
-    <div class="stat">
-      <h3>Clean</h3>
-      <p>Modern UI/UX</p>
-    </div>
-  </div>
-</section>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-big">3–7 Days</div>
+          <div class="stat-small">Typical delivery</div>
+        </div>
+        <div class="stat">
+          <div class="stat-big">100%</div>
+          <div class="stat-small">Mobile friendly</div>
+        </div>
+        <div class="stat">
+          <div class="stat-big">Clean</div>
+          <div class="stat-small">Modern UI/UX</div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section class="cta">
-  <div class="cta-box">
-    <h2>Ready to launch your website?</h2>
-    <p>Send a message and I’ll reply with a clear plan and price.</p>
-    <a href="contact.html" class="btn">Contact Now</a>
-  </div>
-</section>
+  <footer class="footer">
+    <p>© 2026 Demo Business Page. All rights reserved.</p>
+  </footer>
 
-<footer class="footer">
-  <p>© 2026 Dino Studio. All rights reserved.</p>
-</footer>
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
 
-<script src="js/script.js"></script>
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+
+    // Dropdown toggle (works on mobile)
+    const dropBtn = document.querySelector(".dropbtn");
+    const dropdown = document.querySelector(".dropdown");
+
+    dropBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("open");
+      dropBtn.setAttribute("aria-expanded", dropdown.classList.contains("open"));
+    });
+
+    document.addEventListener("click", () => {
+      dropdown.classList.remove("open");
+      dropBtn.setAttribute("aria-expanded", "false");
+    });
+  </script>
 </body>
 </html>

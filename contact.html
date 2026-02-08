@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Business Page | Contact</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="logo" href="./index.html">Demo <span>Business</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-item" href="./index.html">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn nav-item" type="button" aria-haspopup="true" aria-expanded="false">
+          Company <span class="chev">▼</span>
+        </button>
+        <div class="dropdown-content" role="menu">
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+
+      <a class="btn" href="./contact.html">Get Started</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <section class="container page">
+      <h1 class="page-title">Contact</h1>
+      <p class="muted">Send a message and I’ll respond as soon as possible.</p>
+
+      <div class="contact-wrap">
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+        <div class="contact-box">
+          <h2>Quick Info</h2>
+          <p><strong>Email:</strong> your@email.com</p>
+          <p><strong>Location:</strong> Bosnia & Herzegovina</p>
+          <p class="muted small">This is a demo form (frontend). No backend connected.</p>
+
+          <div class="mini-card">
+            <h3>Typical Delivery</h3>
+            <p class="muted">3–7 days for a standard site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Demo Business Page. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
+
+    const dropBtn = document.querySelector(".dropbtn");
+    const dropdown = document.querySelector(".dropdown");
+    dropBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("open");
+      dropBtn.setAttribute("aria-expanded", dropdown.classList.contains("open"));
+    });
+    document.addEventListener("click", () => {
+      dropdown.classList.remove("open");
+      dropBtn.setAttribute("aria-expanded", "false");
+    });
+
+    // Demo submit message (no backend)
+    const form = document.getElementById("contactForm");
+    const note = document.getElementById("formNote");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      note.textContent = "✅ Message sent (demo). Connect backend to receive emails.";

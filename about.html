@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Business Page | About</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="logo" href="./index.html">Demo <span>Business</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-item" href="./index.html">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn nav-item" type="button" aria-haspopup="true" aria-expanded="false">
+          Company <span class="chev">▼</span>
+        </button>
+        <div class="dropdown-content" role="menu">
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+
+      <a class="btn" href="./contact.html">Get Started</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <section class="container page">
+      <h1 class="page-title">About</h1>
+      <p class="muted">
+        This is a demo business website template. You can replace this text with your real company story.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>Build simple, effective websites that help businesses grow.</p>
+        </div>
+        <div class="card">
+          <h3>Our Approach</h3>
+          <p>Fast delivery, clear communication, and clean design.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Demo Business Page. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
+
+    const dropBtn = document.querySelector(".dropbtn");
+    const dropdown = document.querySelector(".dropdown");
+    dropBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("open");
+      dropBtn.setAttribute("aria-expanded", dropdown.classList.contains("open"));
+    });
+    document.addEventListener("click", () => {
+      dropdown.classList.remove("open");
+      dropBtn.setAttribute("aria-expanded", "false");
+    });
+  </script>
+</body>
+</html>
