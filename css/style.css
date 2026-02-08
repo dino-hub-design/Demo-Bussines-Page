@@ -39,6 +39,18 @@ img{ max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 16px;
 }
+.logo .logo-demo {
+  color: #0f172a; /* black */
+}
+
+.logo .logo-business {
+  color: #2f6bff; /* blue */
+}
+
+.logo .logo-page {
+  color: #0f172a; /* black */
+}
+
 
 .logo {
   font-weight: 800;
