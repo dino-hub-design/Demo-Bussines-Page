@@ -94,3 +94,10 @@ Demo project created for learning, practice, and showcasing front-end developmen
 
 This project is open for educational and demo purposes.
 You are free to modify and reuse it for personal or learning projects.
+
+## 💼 Modern Business Website Template
+
+A clean, responsive HTML website template for small businesses and freelancers.
+
+👉 Buy the full template here:  
+https://dinolegio.gumroad.com/l/nqwcss
