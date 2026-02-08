@@ -439,3 +439,9 @@ body{
     display: block;
   }
 }
+/* Desktop dropdown: show on hover */
+@media (min-width: 901px){
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+}
