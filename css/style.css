@@ -34,6 +34,11 @@ img{display:block;max-width:100%}
   background:rgba(255,255,255,.92);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
+  .nav-inner {
+  max-width: none;
+  padding: 14px 32px;
+}
+
 }
 .nav-inner{
   display:flex;
